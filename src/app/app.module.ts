@@ -10,7 +10,15 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { LocationComponent } from './location/location.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from './profile/profile';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 
+
+const material = [
+  MatSelectModule,
+  MatFormField
+];
 
 @NgModule({
   declarations: [
@@ -18,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     CoverComponent,
     PortfolioComponent,
-    LocationComponent
+    LocationComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +35,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "graduation-4f54f": {
+      "hosting": {
+        "gradAng": [
+          "graduation-4f54f"
+        ]
+      }
+    }
+  }
+}

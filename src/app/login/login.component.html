@@ -1,0 +1,105 @@
+<div class="gradient" fxLayout fxLayoutAlign="center center">
+  <mat-card class="login-card">
+    <div fxLayout="column">
+      <mat-card-title>Sign up</mat-card-title>
+      <mat-card-content>
+        <mat-tab-group>
+
+          <mat-tab label="Login">
+            <ng-template matTabContent>
+              <form [formGroup]="loginFormGroup" (ngSubmit)="login()">
+                <div fxLayout="column" class="form-container">
+
+                  <p>
+                    <mat-form-field>
+                      <input type="email" matInput placeholder="Email" formControlName="email">
+                    </mat-form-field>
+                  </p>
+
+                  <p>
+                    <mat-form-field>
+                      <input type="password" matInput placeholder="Password" formControlName="password">
+                    </mat-form-field>
+                  </p>
+
+                  <div class="button">
+                    <button mat-button [disabled]="loginFormGroup.invalid">Login</button>
+                  </div>
+                </div>
+              </form>
+            </ng-template>
+          </mat-tab>
+
+          <mat-tab label="Register">
+            <ng-template matTabContent>
+              <form [formGroup]="registerFormGroup" (ngSubmit)="register()">
+                <div fxLayout="column" class="form-container">
+
+                  <p>
+                    <mat-form-field>
+                      <input matInput placeholder="Name" formControlName="name">
+                    </mat-form-field>
+                  </p>
+                  <p>
+                    <mat-form-field>
+                      <input matInput placeholder="Surname" formControlName="surname">
+                    </mat-form-field>
+                  </p>
+                  <p>
+                    <mat-form-field>
+                      <input type="email" matInput placeholder="Email" formControlName="email">
+                    </mat-form-field>
+                  </p>
+
+                  <p>
+                    <mat-form-field>
+                      <input type="password" matInput placeholder="Password" formControlName="password">
+                    </mat-form-field>
+                  </p>
+
+                  <div class="button">
+                    <button mat-button [disabled]="registerFormGroup.invalid">Register</button>
+                  </div>
+                </div>
+              </form>
+            </ng-template>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+    </div>
+  </mat-card>
+</div>
+
+<br>
+<hr>
+<br>
+
+
+
+<!-- <mat-card>
+  <mat-card-title>Sign in</mat-card-title>
+  <mat-card-content>
+    <form>
+      <p>
+        <mat-form-field>
+          <input type="text #email" matInput placeholder="Mail" formControlName="mail">
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field>
+          <input type="password #password" matInput placeholder="Password" formControlName="password">
+        </mat-form-field>
+      </p>
+
+      <p *ngIf="error" class="error">
+  {{ error }}
+</p>
+
+      <div class="button">
+        <button type="submit" mat-button (click)="onSignin(email.value, password.value)">Login</button>
+      </div>
+
+    </form>
+  </mat-card-content>
+</mat-card> -->

@@ -1,68 +1,84 @@
-nav{
+nav {
   width: 100%;
   font-family: Montserrat;
-  background-color: #2C3E50;
+  background-color: #2c3e50;
   color: white;
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
-  position: fixed;
+  padding-top: 2.2rem;
+  padding-bottom: 1.3rem;
+  position: fixed top;
   z-index: 500;
   transition: 0.4s;
 }
-#logo-box{
+#logo-box {
   float: left;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
+  margin: 0.4rem;
 }
-#logo-box .logo{
+#logo-box .logo {
   color: white;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  padding: 1.6rem;
+  padding: block;
+  letter-spacing: 0.1rem;
 }
-#nav-links{
+#logo-box .logo:hover {
+  color: #18bc9c;
+  text-decoration: none;
+}
+
+#nav-links {
   float: right;
 }
-#nav-links .nav-item{
+#nav-links .nav-item {
   float: left;
-  margin: .4rem;
+  margin: 0.4rem;
 }
-#nav-links .nav-link{
+#nav-links .nav-link {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   font-weight: 700;
   padding: 1.6rem;
   padding: block;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
-#nav-links .nav-link:hover{
-  color: #18BC9C;
+#nav-links .nav-link:hover {
+  color: #18bc9c;
 }
-#nav-links .nav-icon{
+#nav-links .nav-icon {
   display: none;
 }
-@media (max-width: 992px){
-  #logo-box{
-      float: none;
-      text-align: left;
+@media (max-width: 992px) {
+  #logo-box {
+    float: none;
+    text-align: left;
   }
-  #nav-links{
-      float: none;
+  #nav-links {
+    float: none;
   }
-  #nav-links.responsive li:not(:first-child){
-      display: none;
+  #nav-links.responsive li:not(:first-child) {
+    display: none;
   }
-  #nav-links .nav-link{
-      font-size: 2rem;
-      padding-left: 0;
+  #nav-links .nav-link {
+    font-size: 2rem;
+    padding-left: 0;
   }
-  #nav-links .nav-item{
-      float: none;
-      text-align: left;
+  #nav-links .nav-item {
+    float: none;
+    text-align: left;
   }
-  #nav-links .nav-icon{
-      display: block;
-      position: absolute;
-      top: 10px;
-      right: 5px;
-      font-size: 3rem;
+  #nav-links .nav-icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 3rem;
+  }
+  #logo-box .logo {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 3rem;
   }
 }

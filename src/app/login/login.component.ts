@@ -90,7 +90,7 @@ export class LoginComponent implements OnInit {
       ).then(result => {
         this.router.navigate([""]);
       }).catch(err => {
-        this.snackBar.open("Unable to login", "close", { duration: 4000 });
+        this.snackBar.open("Unable to regiser", "close", { duration: 4000 });
       });
     }
   }

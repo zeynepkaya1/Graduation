@@ -35,6 +35,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { LoginComponent } from './login/login.component';
 import { FirebaseService } from './services/firebase.service';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { HomeComponent } from './home/home.component';
 
 
 const material = [
@@ -50,7 +51,8 @@ const material = [
     PortfolioComponent,
     LocationComponent,
     ProfileComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,6 @@ const material = [
   MatFormField
 ];
 
-
 @Component({
   selector: 'profile-component',
   templateUrl: './profile.html',
@@ -17,19 +16,40 @@ const material = [
 })
 export class ProfileComponent{
 
+  data: any;
+  servicedata:any;
   postLoc = new postLoc();
+  postLocArray=[];
+  activeindex=-1;
+  title='Submit';
 
-  dataarray = [];
+  onSubmit(){
+    if(this.activeindex == 1){
 
-  newCity = '';
+    }
+  }
+
+  // postLoc = new postLoc();
+
+  // dataarray = [];
+
+  // newCity = '';
+
+  // data:any;
+  // servicedata:any;
 
 
   // ngOnIt(){
-  //   this.dataarray.push();
+  //   this.dataarray.push(this.postLoc);
   // }
 
-  onAddPost(postInput: HTMLTextAreaElement){
-    this.newCity ='';
+  // addForm(){
+  //   this.postLoc= new postLoc();
+  //   this.dataarray.push(this.postLoc);
+  // }
 
-  }
+  // onAddPost(postInput: HTMLTextAreaElement){
+  //   this.newCity ='';
+
+  // }
 }

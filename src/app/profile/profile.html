@@ -60,7 +60,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>{{newCity}}Paris</td>
+                  <td>Paris</td>
                   <td>France</td>
                   <td>1</td>
                   <td>1</td>
@@ -73,12 +73,13 @@
               </tbody>
             </table>
             <hr>
-            <div>
-              <h5 style="margin-top: 3rem; margin-left: 0.7rem; color: gray;">Add</h5>
+            <!-- <div>
+              <h5 style="margin-top: 3rem; margin-left: 0.8rem; color: gray;">Add</h5>
             </div>
 
 
             <div>
+              <div class="row">
               <table class="table">
                 <thead>
                   <tr>
@@ -96,13 +97,14 @@
                 <tbody>
                   <div class="form-row" *ngFor="let obj of dataarray">
                     <tr>
-                      <td><input type="text" id="City" name="City" placeholder="City" [(ngModel)]="postLoc.postCity">
+                      <td>
+                        <input type="text" id="City" name="City" placeholder="City" class="form-control" [(ngModel)]="obj.postCity">
                       </td>
-                      <td><input type="text" id="Country" name="Country" placeholder="Country"
-                          [(ngModel)]="postLoc.postCountry"></td>
+                      <td>
+                        <input type="text" id="Country" name="Country" placeholder="Country" class="form-control" [(ngModel)]="postLoc.postCountry"></td>
                       <td>
                         <mat-form-field>
-                          <mat-select name="Winter" id="Winter">
+                          <mat-select name="Winter" id="Winter" class="form-control">
                             <mat-option value="0" selected="selected">Rate</mat-option>
                             <mat-option value="1">1</mat-option>
                             <mat-option value="2">2</mat-option>
@@ -118,7 +120,7 @@
                         </mat-form-field>
                       </td>
                       <td>
-                        <select name="Water" id="Water">
+                        <select name="Water" id="Water" class="form-control">
                           <option value="0" selected="selected">Rate</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -133,7 +135,7 @@
                         </select>
                       </td>
                       <td>
-                        <mat-select name="Culture" id="Culture">
+                        <mat-select name="Culture" id="Culture" class="form-control">
                           <option value="0" selected="selected">Rate</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -148,7 +150,7 @@
                         </mat-select>
                       </td>
                       <td>
-                        <mat-select name="Nature" id="Nature">
+                        <mat-select name="Nature" id="Nature" class="form-control">
                           <option value="0" selected="selected">Rate</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -163,7 +165,7 @@
                         </mat-select>
                       </td>
                       <td>
-                        <mat-select name="Entertainment" id="Entertainment">
+                        <mat-select name="Entertainment" id="Entertainment" class="form-control">
                           <option value="0" selected="selected">Rate</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -178,7 +180,7 @@
                         </mat-select>
                       </td>
                       <td>
-                        <mat-select name="Camping" id="Camping">
+                        <mat-select name="Camping" id="Camping" class="form-control">
                           <option value="0" selected="selected">Rate</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -193,7 +195,7 @@
                         </mat-select>
                       </td>
                       <td>
-                        <mat-select name="Cruise" id="Cruise">
+                        <mat-select name="Cruise" id="Cruise" class="form-control">
                           <option value="0" selected="selected">Rate</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -207,15 +209,20 @@
                           <option value="10">10</option>
                         </mat-select>
                       </td>
-                      <td><button>Save</button></td>
+                      <td></td>
                     </tr>
                   </div>
                 </tbody>
               </table>
             </div>
+            <div class="row">
+              <button (click)="addForm()"> ad more</button>
+              <button>Save</button>
+            </div> -->
+            </div>
           </div>
         </div>
       </div>
+      <app-addlocform></app-addlocform>
     </div>
   </div>
-</div>

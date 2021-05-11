@@ -41,3 +41,12 @@ h2{
   font-size: 3.5rem;
   color: #2C3E50;
 }
+
+table {
+  table-layout: auto;
+  word-wrap: break-word;
+}
+
+  table th, table td {
+      overflow: hidden;
+  }

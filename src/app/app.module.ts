@@ -36,6 +36,7 @@ import { LoginComponent } from './login/login.component';
 import { FirebaseService } from './services/firebase.service';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { HomeComponent } from './home/home.component';
+import { AddlocformComponent } from './addlocform/addlocform.component';
 
 
 const material = [
@@ -52,7 +53,8 @@ const material = [
     LocationComponent,
     ProfileComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    AddlocformComponent
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@
             </div> -->
             <div>
               <form (ngSubmit)="onsubmit()">
-                <div class="row">
+                <div class="">
                   <table class="table">
                     <thead>
                       <tr>
@@ -26,19 +26,17 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <div class="form">
-                        <div class="form-row" *ngFor="let obj of dataarray let i=index">
+                      <div>
+                        <div class="">
                           <tr>
                             <td>
-                              <input type="text" id="City" name="postCity" placeholder="City" class="form-control"
-                                [(ngModel)]="obj.postCity">
+                              <input type="text" id="City" name="postCity" placeholder="City" [(ngModel)]="city" >
                             </td>
                             <td>
-                              <input type="text" id="Country" name="postCountry" placeholder="Country" class="form-control"
-                                [(ngModel)]="postLoc.postCountry">
+                              <input type="text" id="Country" name="postCountry" placeholder="Country" [(ngModel)]="country" >
                             </td>
                             <td>
-                              <select name="Winter" id="Winter" class="form-control">
+                              <select name="Winter" id="Winter" [(ngModel)]="winter">
                                 <option value="0" selected="selected">Rate
                                 <option>
                                 <option value="1">1</option>
@@ -54,7 +52,7 @@
                               </select>
                             </td>
                             <td>
-                              <select name="Water" id="Water" class="form-control">
+                              <select name="Water" id="Water" [(ngModel)]="water">
                                 <option value="0" selected="selected">Rate</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -69,7 +67,7 @@
                               </select>
                             </td>
                             <td>
-                              <mat-select name="Culture" id="Culture" class="form-control">
+                              <select name="Culture" id="Culture" [(ngModel)]="culture">
                                 <option value="0" selected="selected">Rate</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -81,10 +79,10 @@
                                 <option value="8">8</option>
                                 <option value="9">9</option>
                                 <option value="10">10</option>
-                              </mat-select>
+                              </select>
                             </td>
                             <td>
-                              <mat-select name="Nature" id="Nature" class="form-control">
+                              <select name="Nature" id="Nature" [(ngModel)]="nature">
                                 <option value="0" selected="selected">Rate</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -96,10 +94,10 @@
                                 <option value="8">8</option>
                                 <option value="9">9</option>
                                 <option value="10">10</option>
-                              </mat-select>
+                              </select>
                             </td>
                             <td>
-                              <mat-select name="Entertainment" id="Entertainment" class="form-control">
+                              <select name="Entertainment" id="Entertainment" [(ngModel)]="entertainment">
                                 <option value="0" selected="selected">Rate</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -111,10 +109,10 @@
                                 <option value="8">8</option>
                                 <option value="9">9</option>
                                 <option value="10">10</option>
-                              </mat-select>
+                              </select>
                             </td>
                             <td>
-                              <mat-select name="Camping" id="Camping" class="form-control">
+                              <select name="Camping" id="Camping"  [(ngModel)]="camping">
                                 <option value="0" selected="selected">Rate</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -126,10 +124,10 @@
                                 <option value="8">8</option>
                                 <option value="9">9</option>
                                 <option value="10">10</option>
-                              </mat-select>
+                              </select>
                             </td>
                             <td>
-                              <mat-select name="Cruise" id="Cruise" class="form-control">
+                              <select name="Cruise" id="Cruise"  [(ngModel)]="cruise">
                                 <option value="0" selected="selected">Rate</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -141,7 +139,7 @@
                                 <option value="8">8</option>
                                 <option value="9">9</option>
                                 <option value="10">10</option>
-                              </mat-select>
+                              </select>
                             </td>
                             <td></td>
                           </tr>
@@ -152,7 +150,7 @@
                 </div>
                 <div class="row">
                   <button (click)="addForm()"> ad more</button>
-                  <button>submit</button>
+                  <button (click)="onsubmit()"> submit</button>
                 </div>
               </form>
             </div>

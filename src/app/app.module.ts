@@ -38,6 +38,7 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { HomeComponent } from './home/home.component';
 import { AddlocformComponent } from './addlocform/addlocform.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProfileTotalComponent } from './profile-total/profile-total.component';
 
 
 const material = [
@@ -56,7 +57,8 @@ const material = [
     LoginComponent,
     HomeComponent,
     AddlocformComponent,
-    FooterComponent
+    FooterComponent,
+    ProfileTotalComponent
   ],
   imports: [
     BrowserModule,

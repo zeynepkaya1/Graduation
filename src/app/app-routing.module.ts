@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CoverComponent } from './cover/cover.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { ProfileTotalComponent } from './profile-total/profile-total.component';
 import { ProfileComponent } from './profile/profile';
 
 const routes: Routes = [
@@ -12,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'profile',
-    component: ProfileComponent
+    component: ProfileTotalComponent
   },
   {
     path: 'login',

@@ -70,6 +70,21 @@
                   <td>1</td>
                   <td>1</td>
                 </tr>
+
+                <div *ngIf="posts.length > 0">
+                  <tr *ngFor="let post of posts">
+                    <td>{{ post.City }}</td>
+                    <td>{{ post.Country }}</td>
+                    <td>{{ post.Winter }}</td>
+                    <td>{{ post.Water }}</td>
+                    <td>{{ post.Culture }}</td>
+                    <td>{{ post.Nature }}</td>
+                    <td>{{ post.Entertainment }}</td>
+                    <td>{{ post.Camping }}</td>
+                    <td>{{ post.Cruise }}</td>
+                  </tr>
+                </div>
+
               </tbody>
             </table>
             <hr>
@@ -219,10 +234,9 @@
               <button (click)="addForm()"> ad more</button>
               <button>Save</button>
             </div> -->
-            </div>
           </div>
         </div>
       </div>
-      <app-addlocform></app-addlocform>
     </div>
   </div>
+</div>

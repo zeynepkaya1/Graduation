@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormField } from '@angular/material/form-field';
 import { postLoc } from './post.model';
@@ -23,11 +23,15 @@ export class ProfileComponent{
   activeindex=-1;
   title='Submit';
 
-  onSubmit(){
-    if(this.activeindex == 1){
 
-    }
-  }
+  // posts = [
+  //   {City: 'Ankara', Country: 'Turkey', Winter: '1', Water: '2', Culture: '2', Nature: '2', Entertainment: '2', Camping: '2', Cruise: '2'},
+  //   {City: 'Istanbul', Country: 'Turkey', Winter: '1', Water: '2', Culture: '2', Nature: '2', Entertainment: '2', Camping: '2', Cruise: '2'}
+  // ];
+
+
+  @Input() posts = [ ];
+
 
   // postLoc = new postLoc();
 
